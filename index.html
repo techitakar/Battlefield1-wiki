@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Battlefield 1 Wiki</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="./background.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be a Veteran</h2>
+            <h3>Tips from the elites</h3>
+            <p>Battlefield 1 wiki helps gives you in depth guide to be pro on the trenches. No matter the console, our tips are relevent across all platforms. Subsequently you can find tips for specific platform on the side bar. Join our subsciption starting at $300/month. See you in the battlefield soldier </p>
+            <a href="#">Get Started</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Basic Guides</a></li>
+            <li><a href="#">Tips and Trics</a></li>
+            <li><a href="#">Socials</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle=document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
